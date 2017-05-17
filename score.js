@@ -57,3 +57,24 @@ p2button.addEventListener("click",function(){
     }
 });
 
+// add the event listener to the reset button
+resetButton.addEventListener("click",function(){
+   reset();
+});
+
+function reset(){
+    p1Score = 0;
+    p2Score = 0;
+    p1Display.textContent = p1Score;
+    p2Display.textContent = p2Score;
+    p1Display.classList.remove("winner");
+    p2Display.classList.remove("winner");
+    gameOver = false;
+}
+
+//adding an event to the input
+numinput.addEventListener("change",function(){
+    winningScoreDisplay.textContent = numinput.value; 
+    winningScore = Number(numinput.value);
+    reset();
+});
