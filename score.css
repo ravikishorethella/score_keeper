@@ -1,3 +1,17 @@
 .winner{
     color: green;
 }
+
+#main{
+    color: blue;
+}
+
+#span-main{
+    color: red;
+    font-size: 20px;
+}
+
+#max{
+    font-weight: 500;
+    font-size: 20px;
+}
